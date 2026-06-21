@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inbarasan J P | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Starfield Canvas -->
+  <canvas id="starfield"></canvas>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">IJ<span class="accent">P</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#certifications" class="mobile-link">Certs</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg-orb orb1"></div>
+    <div class="hero-bg-orb orb2"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        <span>AI/ML Engineer · Full Stack Developer · DSML Enthusiast</span>
+        <span class="dot"></span>
+      </div>
+      <h1 class="hero-name">
+        <span class="line1">INBARASAN</span>
+        <span class="line2">J<span class="accent"> P</span></span>
+      </h1>
+      <p class="hero-tagline">Building production-ready <span class="glow-text">AI systems</span>, intelligent assistants,<br />and ML-driven applications.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">130<span class="accent">+</span></span>
+          <span class="stat-label">LeetCode Problems</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3<span class="accent">+</span></span>
+          <span class="stat-label">Major Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">1429</span>
+          <span class="stat-label">Contest Rating</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-orbit-ring">
+      <div class="orbit-icon" style="--angle:0deg"><span>⚛</span></div>
+      <div class="orbit-icon" style="--angle:60deg"><span>JS</span></div>
+      <div class="orbit-icon" style="--angle:120deg"><span>PY</span></div>
+      <div class="orbit-icon" style="--angle:180deg"><span>☁</span></div>
+      <div class="orbit-icon" style="--angle:240deg"><span>TS</span></div>
+      <div class="orbit-icon" style="--angle:300deg"><span>⬡</span></div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label"><span class="accent">01</span> About Me</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-heading">Crafting Intelligence,<br /><span class="accent">One Line at a Time</span></h2>
+          <p>Computer Science Engineering student at <strong>SNS College of Technology, Coimbatore</strong> with hands-on experience in Full Stack Development, Data Science, and Machine Learning. Skilled in Java, Python, JavaScript, React.js, Node.js, MongoDB, AWS, and Scikit-Learn.</p>
+          <p>Built full-stack web applications and AI-powered solutions through internships and academic projects. Strong foundation in Data Structures, Algorithms, DBMS, OOPs, and Operating Systems.</p>
+          <div class="about-links">
+            <a href="https://linkedin.com/in/inbarasan-jp" target="_blank" class="social-chip">LinkedIn</a>
+            <a href="https://github.com/inbarasanjpcse2023-stack" target="_blank" class="social-chip">GitHub</a>
+            <a href="https://leetcode.com/inbarasanjp" target="_blank" class="social-chip">LeetCode</a>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="info-card">
+            <div class="info-row"><span class="info-icon">📍</span><span>Coimbatore, India</span></div>
+            <div class="info-row"><span class="info-icon">✉️</span><span>inbarasan0809@gmail.com</span></div>
+            <div class="info-row"><span class="info-icon">📞</span><span>+91 8124199180</span></div>
+            <div class="info-row"><span class="info-icon">🎓</span><span>B.E. CSE — CGPA 7.89</span></div>
+            <div class="info-row"><span class="info-icon">📅</span><span>2023 – 2027</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-label"><span class="accent">02</span> Skills</div>
+      <h2 class="section-heading reveal">Making apps with<br /><span class="accent">modern technologies.</span></h2>
+      <p class="section-sub reveal">Born as a coder, thinker, builder, or idea guy.</p>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-cat-label">Languages</div>
+          <div class="skill-pills">
+            <span class="pill">Java</span>
+            <span class="pill">Python</span>
+            <span class="pill">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-label">Frontend</div>
+          <div class="skill-pills">
+            <span class="pill">React.js</span>
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-label">Backend</div>
+          <div class="skill-pills">
+            <span class="pill">Node.js</span>
+            <span class="pill">Express.js</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-label">Databases</div>
+          <div class="skill-pills">
+            <span class="pill">MySQL</span>
+            <span class="pill">MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-label">Cloud & Tools</div>
+          <div class="skill-pills">
+            <span class="pill">AWS</span>
+            <span class="pill">Git</span>
+            <span class="pill">GitHub</span>
+            <span class="pill">Render</span>
+            <span class="pill">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-label">Core CS</div>
+          <div class="skill-pills">
+            <span class="pill">DSA</span>
+            <span class="pill">OOPs</span>
+            <span class="pill">DBMS</span>
+            <span class="pill">OS</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-label">ML / AI</div>
+          <div class="skill-pills">
+            <span class="pill">Scikit-Learn</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+            <span class="pill">NLP</span>
+            <span class="pill">Streamlit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label"><span class="accent">03</span> Projects</div>
+      <h2 class="section-heading reveal">My <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-number">01</div>
+          <div class="project-tech-bar">
+            <span>React.js</span><span>Node.js</span><span>Express</span><span>AWS</span><span>Render</span>
+          </div>
+          <h3>Smart Task Management System</h3>
+          <p>Full-stack task management platform with role-based access control, RESTful APIs for task lifecycle management, and AWS + Render deployment for reliable hosting.</p>
+          <ul class="project-bullets">
+            <li>Secure authentication & authorization</li>
+            <li>Real-time task monitoring & collaboration</li>
+            <li>Workflow management with status updates</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="proj-link">GitHub ↗</a>
+            <a href="#" class="proj-link accent-link">Live Demo ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-number">02</div>
+          <div class="project-tech-bar">
+            <span>Python</span><span>NLP</span><span>Pandas</span><span>Streamlit</span>
+          </div>
+          <h3>AI Finance Tracker</h3>
+          <p>AI-powered personal finance management app using NLP to auto-categorize transactions and generate intelligent spending insights with interactive dashboards.</p>
+          <ul class="project-bullets">
+            <li>Automated NLP transaction categorization</li>
+            <li>Personalized budgeting recommendations</li>
+            <li>Interactive financial pattern dashboards</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="proj-link">GitHub ↗</a>
+            <a href="#" class="proj-link accent-link">Live Demo ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-number">03</div>
+          <div class="project-tech-bar">
+            <span>Python</span><span>Scikit-Learn</span><span>Streamlit</span>
+          </div>
+          <h3>Agri Predict</h3>
+          <p>ML-based crop recommendation system helping farmers select suitable crops using environmental factors like soil characteristics and weather conditions.</p>
+          <ul class="project-bullets">
+            <li>Trained predictive models on real-world data</li>
+            <li>Feature engineering & model evaluation</li>
+            <li>Farmer-friendly Streamlit interface</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="proj-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-number">04</div>
+          <div class="project-tech-bar">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span>
+          </div>
+          <h3>Medical Insurance Cost Prediction</h3>
+          <p>Predictive analytics solution estimating medical insurance costs from demographic and health factors using ensemble ML algorithms.</p>
+          <ul class="project-bullets">
+            <li>Exploratory data analysis on insurance data</li>
+            <li>Regression + ensemble model optimization</li>
+            <li>Actionable visualization dashboards</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="proj-link">GitHub ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-label"><span class="accent">04</span> Experience</div>
+      <h2 class="section-heading reveal">Internship <span class="accent">Experience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">June 2026</div>
+            <h3>Web Development Intern</h3>
+            <div class="timeline-company">InternPe</div>
+            <ul>
+              <li>Developed responsive web applications using HTML, CSS, JavaScript and React.</li>
+              <li>Built and integrated RESTful APIs and reusable UI components.</li>
+              <li>Improved website performance and user experience.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Dec 2025 – Jan 2026</div>
+            <h3>Java Programming Intern</h3>
+            <div class="timeline-company">Synovers, Coimbatore</div>
+            <ul>
+              <li>Worked on core Java: OOPs, Collections, Exception Handling, Multithreading.</li>
+              <li>Developed Java-based applications with debugging and unit testing.</li>
+              <li>Followed Agile practices using Git for version control.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">May 2025 – June 2025</div>
+            <h3>Data Science Intern</h3>
+            <div class="timeline-company">Ether Infotech, Coimbatore</div>
+            <ul>
+              <li>Data cleaning, preprocessing, exploratory analysis and predictive modeling.</li>
+              <li>Built ML models using Python, Pandas, NumPy and Scikit-Learn.</li>
+              <li>Created actionable business insights via visualizations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">July 2024 – Aug 2024</div>
+            <h3>Machine Learning Intern</h3>
+            <div class="timeline-company">Postulates Info Technology, Coimbatore</div>
+            <ul>
+              <li>Implemented supervised learning algorithms and evaluated models.</li>
+              <li>Feature engineering, data preprocessing, and model evaluation.</li>
+              <li>Gained practical exposure to real-world ML workflows.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-label"><span class="accent">05</span> Certifications</div>
+      <h2 class="section-heading reveal">Certified <span class="accent">Expertise</span></h2>
+      <div class="certs-grid">
+        <div class="cert-card reveal"><div class="cert-icon">☁</div><div class="cert-name">Microsoft Azure AI Fundamentals</div><div class="cert-issuer">Microsoft · AI-900</div></div>
+        <div class="cert-card reveal"><div class="cert-icon">🧠</div><div class="cert-name">Generative AI with Data Analytics</div><div class="cert-issuer">Tata · Powered Program</div></div>
+        <div class="cert-card reveal"><div class="cert-icon">📊</div><div class="cert-name">Data Analytics Certificate</div><div class="cert-issuer">Deloitte</div></div>
+        <div class="cert-card reveal"><div class="cert-icon">🔒</div><div class="cert-name">Cybersecurity Certificate</div><div class="cert-issuer">PWC</div></div>
+        <div class="cert-card reveal"><div class="cert-icon">🤖</div><div class="cert-name">Generative AI</div><div class="cert-issuer">Databricks</div></div>
+        <div class="cert-card reveal"><div class="cert-icon">👤</div><div class="cert-name">Human-Computer Interaction</div><div class="cert-issuer">NPTEL</div></div>
+        <div class="cert-card reveal"><div class="cert-icon">💻</div><div class="cert-name">C Programming & DSA</div><div class="cert-issuer">NPTEL</div></div>
+        <div class="cert-card reveal"><div class="cert-icon">📈</div><div class="cert-name">Business Intelligence</div><div class="cert-issuer">NPTEL</div></div>
+        <div class="cert-card reveal"><div class="cert-icon">🗄</div><div class="cert-name">DBMS & SQL</div><div class="cert-issuer">Infosys Springboard</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section section-dark">
+    <div class="container">
+      <div class="section-label"><span class="accent">06</span> Achievements</div>
+      <h2 class="section-heading reveal">By the <span class="accent">Numbers</span></h2>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="ach-num">130<span class="accent">+</span></div>
+          <div class="ach-label">DSA Problems Solved on LeetCode</div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-num">1429</div>
+          <div class="ach-label">Maximum LeetCode Contest Rating</div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-num">3<span class="accent">+</span></div>
+          <div class="ach-label">Full-Stack & ML Projects Deployed</div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-num">9<span class="accent">+</span></div>
+          <div class="ach-label">Certifications in AI, Cloud & Dev</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label"><span class="accent">07</span> Contact</div>
+      <h2 class="section-heading reveal">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub reveal">Interested in working together? Let's connect.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-row">
+            <div class="contact-icon">✉</div>
+            <div>
+              <div class="contact-type">Email</div>
+              <div class="contact-val">inbarasan0809@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-type">Phone</div>
+              <div class="contact-val">+91 8124199180</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-type">Location</div>
+              <div class="contact-val">Coimbatore, India</div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/inbarasan-jp" target="_blank" class="soc-btn">LinkedIn</a>
+            <a href="https://github.com/inbarasanjpcse2023-stack" target="_blank" class="soc-btn">GitHub</a>
+            <a href="https://leetcode.com/inbarasanjp" target="_blank" class="soc-btn">LeetCode</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Write Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Send Message ✦</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">IJ<span class="accent">P</span></div>
+      <p>© 2026 Inbarasan J P · Built with passion &amp; code</p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
